@@ -1,8 +1,6 @@
 # Web-Design
 
-Tasks:
-
-Task 1: Website Implementation
+Task : Website Implementation
 
 Design and implement a website.
 
