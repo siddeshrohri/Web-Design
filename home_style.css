@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    height:100vh;
+    width: 100%;
+    background-image: url(image.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.navbar{
+    width: 89%;
+    margin: auto;
+    padding: 17px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@font-face {
+    font-family: myFont;
+    src: url(Megadeth.ttf);
+}
+.Logo a{
+    margin-left: 10px;
+    margin: auto;
+    padding: 17px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+    font-family: myFont;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:navy;
+}
+.stuff{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+}
+.left{
+    margin-left: 8%;
+}
+.left h1{
+    font-size: 90px;
+    color:aliceblue;
+    float:left;
+    margin-top: 90px;
+}
+.right{
+    margin-right: 6%;
+}
+.right h2{
+    font-size: 90px;
+    color: aliceblue;
+    float: right;
+    margin-top: 90px;
+}
+.navbar ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: coral;
+    margin: auto;
+    display: block;
+}
+.navbar ul li a:hover::after{
+    width:100%;
+    transition: width 0.2s linear;
+}
+.navbar ul li a:hover{
+    color:coral;
+}
+@media only screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .Logo a {
+      font-size: 30px;
+    }
+    .navbar ul {
+      display: flex;
+      flex-direction: row;
+      margin-top: 10px;
+    }
+    .navbar ul li {
+      display: block;
+      margin: 0 10px;
+    }
+    .navbar ul li a {
+      font-size: 18px;
+    }
+  }
+  
